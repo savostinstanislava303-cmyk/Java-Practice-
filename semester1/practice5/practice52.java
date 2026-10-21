@@ -91,8 +91,8 @@ public class practice52 {
             if (price > max1) max1 = price;
         }
         System.out.printf("Розмах цін: %.2f%n", max1 - min1);
-        System.out.println("=== ЗАВДАННЯ 16 ===");
-        
+
+
 
         
 
