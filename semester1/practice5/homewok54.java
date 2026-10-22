@@ -1,5 +1,4 @@
 package practice5;
-import java.util.Scanner;
 public class homewok54 {
     public static void main(String[] args) {
         System.out.println("=== ЗАВДАННЯ 4 ===");
