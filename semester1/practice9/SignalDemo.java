@@ -88,5 +88,6 @@ public class SignalDemo {
         System.out.println("Обмеження ±3.5 -> x2:     " + Arrays.toString(clipThenAmp.process(signal)));
         System.out.println("Вхідний після обробки:    " + Arrays.toString(signal) + " (не змінився)");
     }
+    
 }
 
