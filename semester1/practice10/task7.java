@@ -11,7 +11,6 @@ public class task7 {
             this.width = width;
             this.height = height;
         }
-
         public abstract String renderHtml();
     }
     static class ButtonWidget extends UiWidget {

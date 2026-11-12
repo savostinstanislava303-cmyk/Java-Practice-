@@ -9,7 +9,6 @@ public class task6 {
             return (f(x + h) - f(x - h)) / (2 * h);
         }
     }
-
     static class QuadraticParabola extends DifferentiableFunction {
         private double a, b, c;
 
@@ -18,20 +17,16 @@ public class task6 {
             this.b = b;
             this.c = c;
         }
-
         @Override
         public double f(double x) {
             return a * x * x + b * x + c;
         }
     }
-
     static class NaturalLogFunction extends DifferentiableFunction {
         private double k;
-
         public NaturalLogFunction(double k) {
             this.k = k;
         }
-
         @Override
         public double f(double x) {
             if (x <= 0) {
@@ -40,21 +35,17 @@ public class task6 {
             return k * Math.log(x);
         }
     }
-
     static class ExponentialGrowth extends DifferentiableFunction {
         private double A, lambda;
-
         public ExponentialGrowth(double A, double lambda) {
             this.A = A;
             this.lambda = lambda;
         }
-
         @Override
         public double f(double x) {
             return A * Math.exp(lambda * x);
         }
     }
-
     public static void main(String[] args) {
         DifferentiableFunction[] functions = {
                 new QuadraticParabola(2, 3, 1),
@@ -73,7 +64,6 @@ public class task6 {
         for (int i = 0; i < functions.length; i++) {
             double value = functions[i].f(x);
             double derivative = functions[i].derivativeAt(x);
-
             System.out.printf("%-25s %-15.6f %-15.6f%n",
                     names[i], value, derivative);
         }
